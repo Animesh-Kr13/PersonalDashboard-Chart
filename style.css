@@ -4,114 +4,107 @@
 
 body {
     margin: 0;
-    background: no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    /* background: no-repeat center center fixed; 
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain; */
     color: white;
     font-family: 'Manrope', sans-serif;
     text-shadow: 0px 0px 20px #242424;
+    background: #757F9A;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #D7DDE8, #757F9A);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #D7DDE8, #757F9A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 main {
-    padding: 15px;
-    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-div.top {
+.top {
     display: flex;
     justify-content: space-between;
+    width: 95%;
+    margin: 0 auto;
 }
 
-h1.time {
-    font-size: 3rem;
-    margin-top: 0;
+.time {
+    font-size: 1.75rem;
+    margin: 0.5rem 0.4rem;
+    width: 40%;
+    padding: 0.5rem 0;
 }
 
-div#crypto,
-div#crypto-1,
-div#crypto-2,
-div#crypto-3 {
-    font-size: 1.3rem;
-    color:white;
-    margin: 0 10px;
-    background: #8e9eab;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, #eef2f3, #8e9eab);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, #eef2f3, #8e9eab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    opacity: 0.5;
-    padding: 1rem;
-}
-
-div#crypto:hover,
-div#crypto-1:hover,
-div#crypto-2:hover,
-div#crypto-3:hover {
-    opacity: 1;
-}
-
-div#crypto > p,
-div#crypto-1 > p,
-div#crypto-2 > p,
-div#crypto-3 > p {
-    margin: 0;
-}
-
-div#crypto-top,
-div#crypto-top-1,
-div#crypto-top-2,
-div#crypto-top-3 {
-    display: flex;
-    align-items: flex-start;
-    margin-bottom: 10px;
-    flex-direction: column;
-}
-
-div#weather {
+.weather {
+    width: 60%;
+    margin: 0.5rem 0.4rem;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     justify-content: flex-end;
-    align-self: flex-start;
-    margin-top: -20px;
+    align-self: flex-start; 
+    margin-top: -7px;
 }
 
-div#weather > img {
-    width: 70px;
+.weather > img {
+    width: 60px;
 }
 
-p.weather-city {
+.weather-city {
     width: 100%;
     text-align: right;
     margin: 0;
-    margin-top: -10px;
+    margin-top: -14px;
     font-size: 1.2rem;
 }
 
-p.weather-temp {
+.weather-temp {
     margin: 0;
-    font-size: 1.7rem;
-    margin-left: -10px;
+    font-size: 1.75rem;
+    /* margin-left: -10px; */
 }
 
-p#author {
-    font-size: 1rem;
+.text{
+    font-size: 2rem;
+    font-weight: 700;
+    width: 95%;
+    text-align: center;
+    margin-top: 1rem;
 }
 
-.card {
-    width: 60%;
+.bitcoins-info{
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+
+#crypto,
+#crypto-1,
+#crypto-2 {
+    font-size: 1.3rem;
+    color:white;
+    background: #8e9eab;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #eef2f3, #8e9eab);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #eef2f3, #8e9eab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    opacity: 0.5;
+    width: 96%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+    margin: 0 auto;
+    margin-bottom: 1.5rem;
 }
 
-p{
-    padding: 5px;
+#crypto:hover,
+#crypto-1:hover,
+#crypto-2:hover {
+    opacity: 1;
 }
 
 .bitcoin-name {
-    width: 200px;
+    width: 100%;
     display: flex;
 }
 
@@ -119,14 +112,147 @@ p{
     margin-left: 5px;
 }
 
+.bitcoin-image{
+    max-width: 60px;
+    height: 60px;
+    margin: 0.5rem 0.2rem;
+}
+
 .bitcoin-name p{
     margin-left: 1rem;
     font-weight: 700;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
+}
+
+#crypto > p,
+#crypto-1 > p,
+#crypto-2 > p,
+#crypto-3 > p {
+    margin: 0;
+}
+
+#crypto-top,
+#crypto-top-1,
+#crypto-top-2,
+#crypto-top-3 {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 10px;
+    flex-direction: column;
 }
 
 
-.bitcoins-info{
-    display: flex;
-    justify-content: space-around;
+p#author {
+    font-size: 1rem;
+}
+
+
+@media (min-width: 600px) {
+    .top {
+        width: 90%;
+    }
+
+    .time {
+        font-size: 2rem;
+        width: 40%;
+    }
+
+    .weather {
+        margin-top: -7px;
+    }
+
+    .weather > img {
+        width: 60px;
+    }
+    
+    .weather-city {
+        margin: 0;
+        margin-top: -14px;
+        font-size: 1.4rem;
+    }
+    
+    .weather-temp {
+        margin: 0;
+        font-size: 2rem;
+        /* margin-left: -10px; */
+    }
+
+    .text{
+        font-size: 2.3rem;
+        width: 90%;
+    }
+
+    .bitcoins-info{
+        width: 90%;
+    }
+}
+
+@media (min-width: 768px) {
+
+    main{
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .top {
+        width: 100%;
+    }
+
+    .time {
+        font-size: 3rem;
+        width: 40%;
+        margin: 1rem 1.5rem;
+    }
+
+    .weather {
+        margin-top: -7px;
+        margin: 0.7rem 1.5rem;
+    }
+
+    .weather > img {
+        width: 90px;
+    }
+    
+    .weather-city {
+        margin: 0;
+        margin-top: -14px;
+        font-size: 1.7rem;
+    }
+    
+    .weather-temp {
+        margin: 0;
+        font-size: 3rem;
+        /* margin-left: -10px; */
+    }
+
+    .text{
+        font-size: 3rem;
+        font-weight: 700;
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    .bitcoins-info{
+        width: 100vw;
+        display: grid;
+        grid-template-columns: repeat( auto-fit , minmax(400px, 1fr));
+        gap: 1rem;
+    }
+
+    #crypto,
+    #crypto-1,
+    #crypto-2 {
+        font-size: 1.5rem;
+        color:white;
+        background: #8e9eab;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to bottom, #eef2f3, #8e9eab);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to bottom, #eef2f3, #8e9eab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        opacity: 0.5;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+        width: auto;
+        margin: 0 1rem;
+        margin-bottom: 1.5rem;
+    }
 }
