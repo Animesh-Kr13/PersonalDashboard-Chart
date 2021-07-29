@@ -1,3 +1,132 @@
 *{
     box-sizing: border-box;
 }
+
+body {
+    margin: 0;
+    background: no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: white;
+    font-family: 'Manrope', sans-serif;
+    text-shadow: 0px 0px 20px #242424;
+}
+
+main {
+    padding: 15px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+div.top {
+    display: flex;
+    justify-content: space-between;
+}
+
+h1.time {
+    font-size: 3rem;
+    margin-top: 0;
+}
+
+div#crypto,
+div#crypto-1,
+div#crypto-2,
+div#crypto-3 {
+    font-size: 1.3rem;
+    color:white;
+    margin: 0 10px;
+    background: #8e9eab;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #eef2f3, #8e9eab);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #eef2f3, #8e9eab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    opacity: 0.5;
+    padding: 1rem;
+}
+
+div#crypto:hover,
+div#crypto-1:hover,
+div#crypto-2:hover,
+div#crypto-3:hover {
+    opacity: 1;
+}
+
+div#crypto > p,
+div#crypto-1 > p,
+div#crypto-2 > p,
+div#crypto-3 > p {
+    margin: 0;
+}
+
+div#crypto-top,
+div#crypto-top-1,
+div#crypto-top-2,
+div#crypto-top-3 {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 10px;
+    flex-direction: column;
+}
+
+div#weather {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-self: flex-start;
+    margin-top: -20px;
+}
+
+div#weather > img {
+    width: 70px;
+}
+
+p.weather-city {
+    width: 100%;
+    text-align: right;
+    margin: 0;
+    margin-top: -10px;
+    font-size: 1.2rem;
+}
+
+p.weather-temp {
+    margin: 0;
+    font-size: 1.7rem;
+    margin-left: -10px;
+}
+
+p#author {
+    font-size: 1rem;
+}
+
+.card {
+    width: 60%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+}
+
+p{
+    padding: 5px;
+}
+
+.bitcoin-name {
+    width: 200px;
+    display: flex;
+}
+
+.bitcoin-name img{
+    margin-left: 5px;
+}
+
+.bitcoin-name p{
+    margin-left: 1rem;
+    font-weight: 700;
+    font-size: 1.7rem;
+}
+
+
+.bitcoins-info{
+    display: flex;
+    justify-content: space-around;
+}
