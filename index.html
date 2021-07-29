@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
-        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="style.css">
         <title>Personal Dashboard</title>
         <script src="https://cdn.jsdelivr.net/npm/chart.js@3.4.1/dist/chart.min.js"></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,13 +16,25 @@
             <div class="top">
                 <h1 id="time" class="time"></h1>
 
-                <div id="weather"></div>
+                <div id="weather" class="weather"></div>
             </div>
+
+            <h1 class="text">The Market Price in the Last 24 Hours</h1>
             
             <div class="bitcoins-info">
-                <div id="crypto" class="card">
+                <div id="crypto">
                     <div id="crypto-top">
                         <canvas id="chart"></canvas>
+                    </div>
+                </div>
+                <div id="crypto-1" class="card">
+                    <div id="crypto-top-1">
+                        <canvas id="chart1"></canvas>
+                    </div>
+                </div>
+                <div id="crypto-2" class="card">
+                    <div id="crypto-top-2">
+                        <canvas id="chart2"></canvas>
                     </div>
                 </div>
             </div>
