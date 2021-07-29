@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+        <title>Personal Dashboard</title>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@3.4.1/dist/chart.min.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <main>    
+            <div class="top">
+                <h1 id="time" class="time"></h1>
+
+                <div id="weather"></div>
+            </div>
+            
+            <div class="bitcoins-info">
+                <div id="crypto" class="card">
+                    <div id="crypto-top">
+                        <canvas id="chart"></canvas>
+                    </div>
+                </div>
+            </div>
+
+            <p id="author"></p>
+        </main>
+        <script src="index.js"></script>
+    </body>
+</html>
